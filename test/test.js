@@ -1,32 +1,30 @@
-const {
-  loadFixture,
-} = require("@nomicfoundation/hardhat-network-helpers");
-const { anyValue } = require("@nomicfoundation/hardhat-chai-matchers/withArgs");
 const { expect } = require("chai");
+const { ethers } = require("hardhat");
 
-  describe("Contract works as defined", function () {
 
-    it("Should set the right owner", async function () {
-      const { sample, owner } = await loadFixture();
+describe("Sample contract testing", function () {
 
-      expect(await sample.owner()).to.equal(owner.address);
-    });
+  beforeEach(async function() {
+    const Sample = await ethers.getContractFactory("Sample")
+    sample = await Sample.deploy()
+    await sample.deployed()
+    addressThis = sample.address
+    
+  })
+it("Should should successfully deploy", async function () {
+    console.log("success!")
+  });
 
-    it("Should receive and store the funds to Sample", async function () {
-      const { sample, deposit } = await loadFixture(  
-      );
-
-      expect(await ethers.provider.getBalance(sample.address)).to.equal(
-        deposit
-      );
-    });
-    describe("Events", function () {
-      it("Should emit an event ", async function () {
-        const { sample,slab,filled } = await loadFixture();
-        await expect(sample.levelOfSlab())
-          .to.emit(sample,"true")
-          .withArgs(slab,anyValue); 
-      });
-    });
-
-});
+ it("Should let users transfer tokens to smart contract",async function(){
+        await sample.Deposit(1);
+        expect(await sample.balanceOf(addrress(this)));
+  })
+  
+    it("Should assign a slab",async function(){
+         await sample.Deposit(4);
+         const res = await Details[msg.sender].slab(3);
+         const slab = res.toString()
+         expect(slab).to.equal("3")
+         
+    })
+})
