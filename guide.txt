@@ -1,0 +1,20 @@
+This is a Solidity smart contract to add token to different slabs.
+
+It is Deployed on Goerli Test Network.
+
+Please view and verify this on Goerli Test Net -  https://goerli.etherscan.io/
+		
+	contract address : 0x929d31071Fd586c1bbbB6a17D60093fa8DF4eEE5
+
+
+We can Test it's feature and functions using ,
+
+1.> .Remix IDE with contract address and ABI
+ 
+2.> By deploying again using this code
+
+After successfull deployment,Functionality of contracts include;
+
+a.) Deposite >> Deposit ether and based on amount of deposit it get filled to particulae slab
+
+b.) Slab details-> By providing address details of slab, deposited amount can be enquired.
