@@ -1,0 +1,5 @@
+Define a mapping with key as address of depositor and value as struct containg details of it.
+
+Considering gas price instead of using loop here used if else condition
+
+Designed keeping in mind minimum gas fee 
