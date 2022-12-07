@@ -3,8 +3,10 @@ This is a Solidity smart contract to add token to different slabs.
 It is Deployed on Goerli Test Network.
 
 Please view and verify this on Goerli Test Net -  https://goerli.etherscan.io/
+url of etherscan for details: https://goerli.etherscan.io/tx/0xc401b427c74cdc499c6c11e05f3c92fe6f774ecbebbf4df3482845d21b6803e8
 		
-	contract address : 0x929d31071Fd586c1bbbB6a17D60093fa8DF4eEE5
+	contract address : 0xe94df9ba27346ddf715e715ab3e8a61fad66a52d
+	Transaction Hash : 0xc401b427c74cdc499c6c11e05f3c92fe6f774ecbebbf4df3482845d21b6803e8 
 
 
 We can Test it's feature and functions using ,
